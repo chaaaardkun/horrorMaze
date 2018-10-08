@@ -2,36 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jumpscare : MonoBehaviour {
-    public GameObject e;
+public class Jumpscare : MonoBehaviour { 
     public bool entered;
 	// Use this for initialization
-    public AudioClip alarm;
-    private AudioSource source;
+    //public AudioClip scareSound;
+    public GameObject scareModel;
+    public AudioSource scareSound;
+    public GameObject flicker;
  
      // Use this for initialization
      void Start () {
          entered = false;
-         source = GetComponent<AudioSource>();
      }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    private void OnTriggerEnter(Collider other)
+
+    void OnTriggerEnter()
     {   
         //checks whether the player has already entered the trigger
         if(entered == false){
-            if(other.tag == "Player")
-            {
                 //sets to true so it plays only once
                 entered = true;
-                Instantiate(e, transform.position, transform.rotation);
+
+                scareSound.Play();
+                //jumpCam.SetActive(true);
+                scareModel.SetActive (true);
+                flicker.SetActive(true);
+                StartCoroutine (EndJump ());
+                /* 
+                Instantiate(e, transform.position -(transform.forward*3), transform.rotation);
                 source.PlayOneShot (alarm);  
-                Destroy(gameObject, alarm.length);
-                
-            }
+                Destroy(gameObject, alarm.length);*/
         }
     }
+    IEnumerator EndJump(){
+        yield return new WaitForSeconds(2.03f);
+        scareModel.SetActive(false);
+        flicker.SetActive(false);
+    }
+
 }
