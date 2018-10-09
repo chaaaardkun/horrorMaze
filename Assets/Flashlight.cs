@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour {
     public Light flashlight;
-    bool on = true;
+    public bool lowbat = false;
+    public float batterylife = 5f;
+    public bool on = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,15 +16,24 @@ public class Flashlight : MonoBehaviour {
 	void Update () {
 		if(Input.GetButtonDown("Fire1"))
         {
-            if (on == true)
+            while(lowbat == false)
             {
-                flashlight.enabled = false;
-                on = false;
-            }
-            else
-            {
-                flashlight.enabled = true;
-                on = true;
+                if (on == true)
+                {
+                    flashlight.enabled = false;
+                    on = false;
+                }
+                else
+                {
+                    flashlight.enabled = true;
+                    on = true;
+                    batterylife -= 1f;
+                    Debug.Log(batterylife);
+                    if(batterylife == 0)
+                    {
+                        lowbat = true;
+                    }
+                }
             }
         }
 	}

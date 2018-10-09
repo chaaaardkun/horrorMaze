@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00061816757, g: 0.0023196875, b: 0.0555418, a: 1}
+  m_IndirectSpecularColor: {r: 0.00070116227, g: 0.0023195113, b: 0.055857606, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23215,6 +23215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 1060692328}
+  lowbat: 0
+  batterylife: 100
+  on: 0
 --- !u!1001 &1062246104
 Prefab:
   m_ObjectHideFlags: 0
