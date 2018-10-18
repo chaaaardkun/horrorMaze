@@ -23167,7 +23167,7 @@ Light:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1060692326}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23203,7 +23203,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942,
     type: 2}
   m_PrefabInternal: {fileID: 929706029}
---- !u!114 &1062018525
+--- !u!114 &1062018523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23216,7 +23216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashlight: {fileID: 1060692328}
   lowbat: 0
-  batterylife: 100
   on: 0
 --- !u!1001 &1062246104
 Prefab:

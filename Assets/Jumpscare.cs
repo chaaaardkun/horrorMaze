@@ -33,6 +33,10 @@ public class Jumpscare : MonoBehaviour {
                 Destroy(gameObject, alarm.length);*/
         }
     }
+    private void OnTriggerExit()
+    {
+        entered = false;
+    }
     IEnumerator EndJump(){
         yield return new WaitForSeconds(2.03f);
         scareModel.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour {
     public Light flashlight;
     public bool lowbat = false;
-    public float batterylife = 100f;
+    //public float batterylife = 100f;
     public bool on = false;
 	// Use this for initialization
 	void Start () {
@@ -27,8 +27,8 @@ public class Flashlight : MonoBehaviour {
                 {
                     flashlight.enabled = true;
                     on = true;
-                StartCoroutine(decreasebatterylife(batterylife));
-                Debug.Log(batterylife);
+               // StartCoroutine(decreasebatterylife(batterylife));
+                Debug.Log(on);
                 }
            // }
         }
