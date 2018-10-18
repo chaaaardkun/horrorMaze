@@ -519,6 +519,7 @@ ModelImporter:
     4300014: RL_UpperTeeth
     7400000: Default
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Hair
     13700002: Merge_Body
     13700004: RL_DownTeeth
@@ -527,7 +528,6 @@ ModelImporter:
     13700010: RL_R_Eye
     13700012: RL_Tongue
     13700014: RL_UpperTeeth
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -540,8 +540,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Copied Avatar Rig Configuration mis-match. Transform hierarchy
-      does not match:\n\tTransform 'EthanHips' for human bone 'Hips' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -2284,11 +2283,12 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    rootMotionBoneName: Hips
+    rootMotionBoneRotation: {x: -0.00000008940697, y: -0.00000043801788, z: -0.00000020175423,
+      w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
-    skeletonHasParents: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
   humanoidOversampling: 1
