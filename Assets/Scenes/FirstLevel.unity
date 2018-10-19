@@ -20824,11 +20824,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &826975196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100492, guid: 07b6dd3a3a451c642a334dc7d6834e0f,
-    type: 3}
-  m_PrefabInternal: {fileID: 435212910}
 --- !u!4 &826975197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400492, guid: 07b6dd3a3a451c642a334dc7d6834e0f,
@@ -23714,7 +23709,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062018520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d160201623520794e9d08114ac7933b1, type: 3}
+  m_Script: {fileID: 11500000, guid: d0ca59872a21ea14d94ec186daae2f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 1060692328}
@@ -38584,7 +38579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145544309}
   - component: {fileID: 2145544308}
-  - component: {fileID: 2145544307}
+  - component: {fileID: 2145544306}
   m_Layer: 0
   m_Name: JS
   m_TagString: Untagged
@@ -38592,7 +38587,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2145544307
+--- !u!114 &2145544306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38600,11 +38595,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2145544305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfbd4f428d72cc446806777ab0def94b, type: 3}
+  m_Script: {fileID: 11500000, guid: bee4c3e9eaaa76544a904b7e2824a9ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   entered: 0
-  scareModel: {fileID: 826975196}
+  scareModel: {fileID: 100492, guid: 07b6dd3a3a451c642a334dc7d6834e0f, type: 3}
   scareSound: {fileID: 256031068}
   flicker: {fileID: 821933865}
   cam: {fileID: 0}
