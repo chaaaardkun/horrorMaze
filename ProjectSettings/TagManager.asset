@@ -6,6 +6,11 @@ TagManager:
   tags:
   - LightsOut
   - WhiteLadyStatic
+  - Blood
+  - Key
+  - Flashlight
+  - Concrete
+  - Dirt
   layers:
   - Default
   - TransparentFX
