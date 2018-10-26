@@ -11,6 +11,9 @@ TagManager:
   - Flashlight
   - Concrete
   - Dirt
+  - Paper
+  - Door
+  - Examine
   layers:
   - Default
   - TransparentFX
@@ -21,7 +24,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Interact
   - 
   - 
   - 
